@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Books & Authors</title>
+    {% load static %}	
+    <link rel="stylesheet" href="{% static 'library/css/style.css' %}">
 </head>
 <body>
     <div class="wrapper">
-
         <div class="main-left">
-            <h1>Add a Book</h1>
+            <h1 class="center">Add a Book</h1>
             <form action="/newbook" method="post">
                 {% csrf_token %}
                 <label>
